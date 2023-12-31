@@ -1,0 +1,89 @@
+/* DateSelector.css */
+
+.date-selector-container {
+  text-align: center;
+  padding-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  background-color: #1D428A;
+  color: white;
+  position: fixed;
+  top: 0;
+}
+
+h1 {
+  margin: 10px 0;
+}
+
+
+
+.Date-Label{
+  font-size:36px;
+}
+.date-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  text-align:center;
+  
+}
+
+.date-navigation button {
+  color: white;
+  font-size: 25px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius:10px;
+  background-color: #C9082A;
+}
+
+.date-navigation button:hover {
+  background-color: #8c0519; /* Darker shade on hover */
+}
+
+.custom-datepicker {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 10px solid #1D428A;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: black;
+  text-align: center;
+  font-size:25px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .custom-datepicker{
+    width:170px;
+  }
+
+  .Forward-buttons button{
+    height:40px;
+    margin-bottom:5px;
+    font-size:16px;
+  }
+
+  .Backward-buttons button{
+    height:40px;
+    margin-bottom:5px;
+    font-size:16px;
+  }
+}
+
+
+
+
+.Forward-buttons button{
+  margin-left:20px;
+}
+
+.Backward-buttons button{
+  margin-right:20px;
+}
+

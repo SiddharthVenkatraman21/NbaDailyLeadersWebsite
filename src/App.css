@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color:#33A1FD;
 }
 
 .App-logo {
@@ -11,6 +12,13 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.Body{
+  background-color:snow;
+  margin:0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .App-header {
@@ -36,3 +44,72 @@
     transform: rotate(360deg);
   }
 }
+
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
+  width: 70%;
+  /* margin-left:5%; */
+  align-content: flex-start;
+}
+
+.Info-Content{
+  display:flex;
+  margin-top:200px;
+  margin-left:6%;
+}
+.StatLeaders{
+  width:80%;
+  display:flex;
+  flex-wrap:wrap;
+  padding-bottom:10px;
+  align-content: flex-start;
+  gap:20px;
+}
+
+.Headings {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+}
+
+.Game-Heading,
+.Daily-Leaders-Heading {
+  color: white;
+  background-color: #1d428a;
+  flex-grow: 1; /* Take up all available space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.Game-Heading {
+  margin-left: 200px;
+}
+
+.Daily-Leaders-Heading {
+  margin-right: 240px;
+}
+
+@media only screen and (max-width: 900px) {
+  .Headings {
+    flex-direction: column; /* Stack the headings vertically on smaller screens */
+    align-items: center; /* Center the headings horizontally on smaller screens */
+  }
+
+  .Game-Heading,
+  .Daily-Leaders-Heading {
+    width: 100%; /* Take up the full width on smaller screens */
+    margin: 10px 0; /* Add some spacing between the headings on smaller screens */
+  }
+
+  .Info-Content{
+    margin-top:250px;
+  }
+}
+
+
