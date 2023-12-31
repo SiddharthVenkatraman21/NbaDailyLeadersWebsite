@@ -1,0 +1,52 @@
+.player-card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    margin: 8px;
+    padding: 8px;
+    /* border: 3px solid #0E34A0; */
+    border-radius:10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    color: white;
+    width:40%;
+    height:11rem;
+}
+@media only screen and (max-width: 1200px) {
+  .player-card {
+    height: 14rem; /* Set a different height for mobile */
+    width: 15rem;
+  }
+}
+
+  
+  .name-container {
+    padding: 8px;
+  }
+  
+  .stats-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap:wrap;
+   
+  }
+  
+  .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center-align text within each stat */
+    flex-grow: 1; /* Allow each stat to grow and fill available space */
+  }
+  
+  .stat-label {
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  
+  .stat-value {
+    margin-top: 4px;
+  }
+  
+  /* Add any additional styling as needed */
+  
